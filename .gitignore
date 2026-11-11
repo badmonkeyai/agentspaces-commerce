@@ -1,0 +1,71 @@
+# AgentSpaces Commerce repository.
+#
+# What must be COMMITTED and therefore is deliberately NOT listed here:
+#   .github/                       the CI workflows
+#   tools/                         the docs lint every public AgentSpaces repository carries
+#   src/test/resources/vectors/    the golden CBOR vectors; the Python, TypeScript, and Clojure twins read them
+
+# Maven build output
+target/
+dependency-reduced-pom.xml
+release.properties
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+.flattened-pom.xml
+.mvn/wrapper/maven-wrapper.jar
+
+# Compiled classes outside target (IDE builds)
+*.class
+hs_err_pid*
+replay_pid*
+
+# IDEs and editors
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+.classpath
+.project
+.settings/
+.factorypath
+.apt_generated/
+.sts4-cache/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs and scratch
+*.log
+/tmp/
+
+# The release dashboard's checklist state and run logs, should it ever run from here
+.release-dashboard/
+
+# JavaScript tooling, should a script ever join the repository
+node_modules/
+
+# Signing keys, vault exports, and key stores never belong in a repository. A mandate's
+# issuer signs with a key it keeps outside this library, and the tests make fresh keys.
+peer.key
+peer.keys/
+keys/
+*.pem
+*.key
+*.p8
+*.p12
+*.pfx
+*.jks
+*.jwk
+*.jwks
+*.asc
+*.gpg
+
+# Local environment and Maven credentials
+.env
+.env.*
+settings-security.xml
