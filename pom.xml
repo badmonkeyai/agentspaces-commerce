@@ -21,7 +21,7 @@
 
   <groupId>ai.badmonkey.agentspaces</groupId>
   <artifactId>agentspaces-commerce</artifactId>
-  <version>0.6.0</version>
+  <version>0.7.0-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>AgentSpaces Commerce</name>
   <description>
@@ -81,7 +81,7 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
     <!-- The AgentSpaces BOM, which manages the versions below, and the test tools the core uses. -->
-    <agentspaces.version>0.6.0</agentspaces.version>
+    <agentspaces.version>0.7.0-SNAPSHOT</agentspaces.version>
     <junit.version>5.13.4</junit.version>
     <assertj.version>3.27.7</assertj.version>
 
